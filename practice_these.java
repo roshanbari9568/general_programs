@@ -24,7 +24,7 @@ public class practice_these {
 
             case 1:
 
-                System.out.print(" Enter the String Values to check its Lapindrome or not" + "  :");
+                System.out.print(" Enter the String to check if Left String matches Right String" + "  :");
                 String whole = sc.next();
                 int len = whole.length();
                 String a = whole.substring(0, len / 2);
