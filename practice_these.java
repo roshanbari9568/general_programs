@@ -7,7 +7,7 @@ public class practice_these {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Choose your operation you want to perform ");
-        System.out.println("Enter 1 For Lapindrome");
+        System.out.println("Enter 1 to Check If Right String matches Left String");
         System.out.println("Enter 2 For Palindrome");
         System.out.println("Enter 3 For Factorial of Number");
         System.out.println("Enter 4 To reverse the String");
@@ -31,9 +31,9 @@ public class practice_these {
                 int len1 = a.length();
                 String b = whole.substring(len - len1);
                 if (a.equals(b)) {
-                    System.out.println("Its lapindrome String");
+                    System.out.println("Yes! Its matches");
                 } else {
-                    System.out.println("No! No! Its not");
+                    System.out.println("Nope! Its not");
                 }
                 break;
 
