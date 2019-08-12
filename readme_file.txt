@@ -1,14 +1,14 @@
 What it is?
 A.	Lapindrome -
-Step 1 : When String is divided into two halves and first halve is exact equal to second halve then it is lapindrome.
+Step 1 : When String is divided into two halves and string contains in first halve matching with string contains in second halve then it is lapindrome.
 Step 2: If String is odd in length then skip the middle character and do the Step 1 process.
-Example : abab, abcab,wewe,weuwe, uvu, youryou.
+Example : abab, abcab,wewe,weuwe, uvu, youryou,unmeunme.
 
 B.	Palindrome -
 When we reverse the String, if String is exact equal after reversing it, then it is Palindrome
 Example : 121, 2225222, 33533.
 
-C.	Factorial –
+C.	Factorial â€“
 If we want factorial of 5 then answer is, 5*4*3*2*1 =120
 If we want factorial of 6 then answer is, 6*5*4*3*2*1*=720
 Like factorial of 7 is =5040 and 8 is= 40320
