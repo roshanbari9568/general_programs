@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -25,29 +26,29 @@ public class practice_these {
 
             case 1:
 
-               System.out.println(" Enter the String to check its Lapindrome or not");
-        String whole = sc.next();
+                System.out.println(" Enter the String to check its Lapindrome or not");
+                String whole = sc.next();
 
-        int len = whole.length();                      //Taking length of whole string and store it in len variable                                            
-        String a = whole.substring(0, len / 2);        //Dividing the  length of whole string  into two halves starting from first value and store it in a variable                               
-        int len1 = a.length();                           //Taking length of a and storing it in len1 variable                              
-        String b = whole.substring(len - len1);        //Now subtract len1 - len2 it will give two equal halves 
+                int len = whole.length();                      //Taking length of whole string and store it in len variable                                            
+                String a = whole.substring(0, len / 2);        //Dividing the  length of whole string  into two halves starting from first value and store it in a variable                               
+                int len1 = a.length();                           //Taking length of a and storing it in len1 variable                              
+                String b = whole.substring(len - len1);        //Now subtract len1 - len2 it will give two equal halves 
 
-        String x = a;                                    //Storing a into x
-        String y = b;                                    //Storing b into y
+                String x = a;                                    //Storing a into x
+                String y = b;                                    //Storing b into y
 
-        char arr_x[] = x.toCharArray();                  //converting x characters and storing it in array arr_x
-        char arr_y[] = y.toCharArray();                  //converting y characters and storing it in array arr_y
+                char arr_x[] = x.toCharArray();                  //converting x characters and storing it in array arr_x
+                char arr_y[] = y.toCharArray();                  //converting y characters and storing it in array arr_y
 
-        Arrays.sort(arr_x);                            //Sorting the arr_x
-        Arrays.sort(arr_y);                            //Sorting the arr_y
+                Arrays.sort(arr_x);                            //Sorting the arr_x
+                Arrays.sort(arr_y);                            //Sorting the arr_y
 
-        if (Arrays.equals(arr_x, arr_y)) //if sorted arr_x && arr_y matches, then its lapindrome
-        {
-            System.out.println("Yes Its match");
-        } else {
-            System.out.println("No Its not");
-        }
+                if (Arrays.equals(arr_x, arr_y)) //if sorted arr_x && arr_y matches, then its lapindrome
+                {
+                    System.out.println("Yes Its match");
+                } else {
+                    System.out.println("No Its not");
+                }
                 break;
 
             case 2:
