@@ -45,7 +45,7 @@ public class practice_these {
 
                 if (Arrays.equals(arr_x, arr_y)) //if sorted arr_x && arr_y matches, then its lapindrome
                 {
-                    System.out.println("Yes Its match");
+                    System.out.println("Yes Its Lapindrome");
                 } else {
                     System.out.println("No Its not");
                 }
