@@ -1,4 +1,3 @@
-
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -11,14 +10,15 @@ public class practice_these {
         System.out.println("Choose your operation you want to perform ");
         System.out.println("Enter 1 to Check If Its Lapindrome or not");
         System.out.println("Enter 2 For Palindrome");
-        System.out.println("Enter 3 For Factorial of Number");
-        System.out.println("Enter 4 To reverse the String");
-        System.out.println("Enter 5 To Check Prime number or not");
-        System.out.println("Enter 6 To Check Even number or Odd number  ");
-        System.out.println("Enter 7 To Know Year is Leap or Not");
-        System.out.println("Enter 8 To Get the Fibonacci Series");
-        System.out.println("Enter 9 To Get perfect square between 1 & 100");
-        System.out.println("Enter 10 to get middle character of string");
+        System.out.println("Enter 3 for to find out Anagram String");
+        System.out.println("Enter 4 For Factorial of Number");
+        System.out.println("Enter 5 To reverse the String");
+        System.out.println("Enter 6 To Check Prime number or not");
+        System.out.println("Enter 7 To Check Even number or Odd number  ");
+        System.out.println("Enter 8 To Know Year is Leap or Not");
+        System.out.println("Enter 9 To Get the Fibonacci Series");
+        System.out.println("Enter 10 To Get perfect square between 1 & 100");
+        System.out.println("Enter 11 to get middle character of string");
 
         int number = sc.nextInt();
 
@@ -74,6 +74,32 @@ public class practice_these {
                 break;
 
             case 3:
+                System.out.println("Lets find out whether both sides are anagram or not : -");
+                System.out.println("Please enter your first word or sentence");
+                String xx = sc.next();
+                System.out.println("Please enter your second word or sentence");
+                String yy = sc.next();
+
+                xx = xx.replace(" ", "");
+                yy = yy.replace(" ", "");
+
+                xx = xx.toLowerCase();
+                yy = yy.toLowerCase();
+
+                char aa[] = xx.toCharArray();
+                char bb[] = yy.toCharArray();
+
+                Arrays.sort(aa);
+                Arrays.sort(bb);
+
+                if (Arrays.equals(aa, bb)) {
+                    System.out.println("Yes it is");
+                } else {
+                    System.out.println("No its not");
+                }
+                break;
+
+            case 4:
                 System.out.print("Please Enter to Numerical Values to find the factorial of given number" + "  :");
                 int takennum = sc.nextInt();               //Taking takenum to check
                 int fact = 1;
@@ -85,7 +111,7 @@ public class practice_these {
                 System.out.println("The factorial of" + " " + takennum + "is" + " " + fact);
                 break;
 
-            case 4:
+            case 5:
                 System.out.print("Please Enter the String to reverse it" + "  :");
                 String takeString = sc.next();
 
@@ -98,7 +124,7 @@ public class practice_these {
                 System.out.println(revstring);
                 break;
 
-            case 5:
+            case 6:
                 System.out.print("Please Enter the number to check its prime or not" + "  :");
                 int takePrime = sc.nextInt();
                 int tempo = 0;
@@ -115,7 +141,7 @@ public class practice_these {
                 }
                 break;
 
-            case 6:
+            case 7:
                 System.out.print("Please Enter numerical Value to Check its even or odd" + "  :");
                 int eorodd = sc.nextInt();
 
@@ -125,7 +151,7 @@ public class practice_these {
                     System.out.println(eorodd + " " + "is Odd number");
                 }
                 break;
-            case 7:
+            case 8:
                 System.out.print("Enter any year to find its leap year or not" + "  :");
                 int year = sc.nextInt();
                 if (year % 400 == 0) {
@@ -136,7 +162,7 @@ public class practice_these {
                     System.out.println("Nope! Its not Leap Year");
                 }
                 break;
-            case 8:
+            case 9:
                 int fa = 0,
                  fb = 1,
                  fc = 0;
@@ -152,7 +178,7 @@ public class practice_these {
 
                 }
                 break;
-            case 9:
+            case 10:
                 System.out.print("Enter your number to find whether its perfect square or not" + "  :");
                 int pn = sc.nextInt();
 
@@ -164,8 +190,8 @@ public class practice_these {
                 }
                 break;
 
-            case 10:
-                System.out.print("Please Enter your String" + "  :");
+            case 11:
+                System.out.print("Please Enter your odd number String" + "  :");
                 String mchar = sc.next();
                 int lenth = mchar.length();
                 int div = lenth / 2;
