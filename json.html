@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="first"></p><br>
+    <p id="second"></p>
+
+    <script>
+
+       var abc =
+            [   {"name":"TCS", "branch":"Chandigarh","product":"SOFTWARE"},
+                {"name":"Reliance","branch":"Mumbai","product":"telecom"},
+            {   interior:[
+                {
+                    "interior1":"a"
+                },
+                {
+                    "interior2":"b"
+                }
+            ]}
+            ]
+           
+        
+
+        document.getElementById("first").innerHTML = abc[0].name
+        document.getElementById("second").innerHTML = abc[2].interior[0].interior1
+
+    </script>
+    
+</body>
+</html>
