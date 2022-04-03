@@ -32,7 +32,7 @@ public class practice_these {
                 int len = whole.length();                      //Taking length of whole string and store it in len variable                                            
                 String a = whole.substring(0, len / 2);        //Dividing the  length of whole string  into two halves starting from first value and store it in a variable                               
                 int len1 = a.length();                           //Taking length of a and storing it in len1 variable                              
-                String b = whole.substring(len - len1);        //Now subtract len1 - len2 it will give two equal halves 
+                String b = whole.substring(len - len1);        //Now subtract len1 - len2 it will give two equal halves. 
 
                 String x = a;                                    //Storing a into x
                 String y = b;                                    //Storing b into y
